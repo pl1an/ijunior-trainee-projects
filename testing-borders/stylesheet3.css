@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+    background-color: grey;
+}
+
+p{
+    margin: 0px;
+    color: grey;
+    text-indent: 30px;
+}
+
+a:link{
+    display: inline;
+}
+
+#d1, #d2, #d3, #d4{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+
+    border-color: white;
+    border-width: 15px;
+    background-color: aqua;
+    background-clip: padding-box;
+    padding: 10px;
+    box-shadow: 10px 10px 5px black;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#d1{
+    text-align: justify;
+    border-style: solid;
+}
+#d2{
+    text-align: left;
+    border-style: inset;
+    overflow: auto;
+}
+#d3{
+    text-align: right;
+    border-style: ridge;
+}
+#d4{
+    text-align: center;
+    border-style: double;
+}
+
+.p1{
+    text-decoration: wavy;
+}
+.p2{
+    text-decoration: overline;
+}
+.p3{
+    text-decoration: line-through;
+}
+.p4{
+    text-decoration: underline;
+}
+
+#d1:hover, #d2:hover, #d3:hover, #d4:hover{
+    background-color: white;
+    transition: 1s;
+}
+
+#topdiv{
+    border: 10px grey double;
+    box-shadow: 10px 10px 5px black;
+    background-color: white;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: table;
+    text-align: center;
+}
+#linkrow{
+    padding: 0px;
+    display: table-row;
+}
+#toplinkdiv{
+    height: 50px;
+    width: 300px;
+    border-right: 3px grey solid;
+    border-left: 3px grey solid;
+    display: table-cell;
+    vertical-align: middle;
+    transition: 500ms;
+}
+#toplinkdiv:hover{
+    background-color: lightblue;
+}
+.toplink{
+    text-decoration: none;
+    color: grey;
+    margin: auto;
+    text-align: center;
+}
+
+#bottomdiv{
+    margin-top: 50px;
+    width: auto;
+    height: 300px;
+    border-top: 10px grey double;
+    background-color: white;
+    padding: 10px;
+}
+#bottomlinkdiv{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bottomlink:link{
+    text-decoration: none;
+    text-align: center;
+    color: blue;
+    transition: 1s;
+}
+.bottomlink:visited{
+    color: purple;
+}
+.bottomlink:active{
+    color: red;
+}
+.bottomlink:hover{
+    color: lightblue;
+}
