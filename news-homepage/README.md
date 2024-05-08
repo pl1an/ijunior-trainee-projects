@@ -78,7 +78,7 @@ I'm going to search for alternatives.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@pl1an](https://www.frontendmentor.io/profile/pl1an)
 
 ## Acknowledgments
 
