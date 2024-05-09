@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+body{
+    padding: 0px;
+    background-color: #403d39;
+    overflow: hidden;
+}
+h1{
+    color: #eb5e28;
+    font-weight: 800;
+    font-family: 'Caveat';
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightside{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+.logincard{
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #ccc5b9;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #252422;
+}
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    margin: 10px 0px;
+}
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fffcf2;
+    color: #252422;
+    font-size: 9pt;
+    outline-color: #252422;
+    box-sizing: border-box;
+}
+.textfield >input::placeholder{
+    color: #252422a0; 
+}
+.textfield > label{
+    color: #252422;
+    margin-bottom: 10px;
+    font-size: 12pt;
+}
+.loginbutton{
+    width: 100%;
+    margin-top: 25px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2524223d;
+    background-color: #eb5f2864;
+    cursor: pointer;
+    transition: 300ms;
+    box-shadow: 10px 10px 40px 12px #67291164;
+}
+.loginbutton:hover{
+    background-color: #eb5e28;
+    color: #252422d0;
+}
+
+.leftside{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+}
