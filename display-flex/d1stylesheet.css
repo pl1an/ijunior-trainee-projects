@@ -1,0 +1,41 @@
+header{
+    margin-bottom: 100px;
+}
+
+nav{
+    height: 50px;
+    background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+a{
+    text-align: right;
+    width: auto;
+    margin-right: 77px;
+}
+
+footer{
+    background-color: grey;
+    display: flex;
+}
+p{
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div{
+    margin: 5px;
+    width: 175px;
+    height: 100px;
+    border: 1px red solid;
+}
+
