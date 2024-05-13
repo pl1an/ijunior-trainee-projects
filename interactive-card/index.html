@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="monobehaviour.js" defer></script>
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  <!-- before card activation -->
+
+  <div class="card">
+    <div class="front">
+      <img src="images/bg-card-front.png">
+      <h2 id="number">0000 0000 0000 0000</h2>
+      <h3 id="name">Jane Appleseed</h3>
+      <div id="date">
+        <h3 id="month">00</h3>
+        <h3>/</h3>
+        <h3 id="year">00</h3>
+      </div>
+      <img src="images/card-logo.svg" id="logo">
+    </div>
+    <div class="back">
+      <img src="images/bg-card-back.png">
+      <h3 id="cvc">000</h3>
+    </div>
+  </div>
+
+  <div class="form-place">
+    <div class="form">
+      <div class="name">
+        <h3>CARDHOLDER NAME</h3>
+        <input type="text" class="name-input" id="name-input" placeholder="e.g. Jane Appleseed" maxlength="28">
+        <p class="blank hide">Can't be blank</p>
+        <p class="numbers-only hide">Wrong format, numbers only</p>
+      </div>
+      <div class="number">
+        <h3>CARD NUMBER</h3>
+        <input type="text" class="number-input" id="number-input" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+        <p class="blank hide">Can't be blank</p>
+        <p class="numbers-only hide">Wrong format, numbers only</p>
+      </div>
+      <div class="exp-cvc">
+        <div class="exp">
+          <h3>EXP. DATE (MM/YY)</h3>
+          <input type="text" class="month-input" id="month-input" placeholder="MM" maxlength="2">
+          <input type="text" class="year-input" id="year-input" placeholder="YY" maxlength="2">
+          <p class="blank hide">Can't be blank</p>
+          <p class="numbers-only hide">Wrong format, numbers only</p>
+        </div>
+        <div class="cvcdiv">
+          <h3>CVC</h3>
+          <input type="text" class="cvc-input" id="cvc-input" placeholder="e.g. 123" maxlength="3">
+          <p class="blank hide">Can't be blank</p>
+          <p class="numbers-only hide">Wrong format, numbers only</p>
+        </div>
+      </div>
+      <button class="submit">Confirm</button>
+    </div>
+  </div>
+
+
+  <!-- after card activation -->
+
+  <div class="activated-card hide">
+    <img src="images/icon-complete.svg">
+    <h2>Thank you!</h2>
+    <h3>We've added your card details</h3>
+    <button class="reset">Continue</button>
+  </div>
+  
+
+  <!-- atribution -->
+
+  <div class="attr">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/pl1an">pl1an</a>.
+    </div>
+  </div>
+
+</body>
+</html>
