@@ -94,7 +94,6 @@ I hope to learn more about JavaScript to a point where i don't struggle with cha
 ## Author
 
 - My github - [pl1an](https://github.com/pl1an)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 
 ## Acknowledgments
 
