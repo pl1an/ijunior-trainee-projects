@@ -1,0 +1,256 @@
+/* General */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+
+    /* border: 1px red solid; */
+}
+
+body{
+    padding: 10px 30px 10px 0px;
+    display: flex;
+
+    background-color: #282929;
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+
+    height: 100vh;
+    overflow: hide;
+    align-items: center;
+}
+
+button{
+    width: 30px;
+    height: 100%;
+
+    color: #282929;
+    border: none;
+    border-radius: 5px;
+    margin-left: 3px;
+    padding: 0.3rem 0.6rem;
+
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 400ms;
+}
+button:hover{
+    background-color: #282929;
+    color: #CD5D67;
+}
+button > i{
+    pointer-events: none;
+}
+
+input{
+    height: 100%;
+}
+input, select{
+    padding: .25rem .5rem;
+}
+
+
+/* Main div styles */
+.maindiv{
+    height: 95vh;
+    padding: 10px;
+    margin: 0px 30px 0px 30px;
+    box-shadow: 10px 10px 30px black;
+}
+
+.title{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.lists{
+    height: 95vh;
+    padding: 10px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    box-shadow: 10px 10px 30px black;
+    overflow: auto;
+    scrollbar-color: grey #282929;
+}
+
+.toolbar, .donetodo, .todoplace{
+    padding: 10px;
+    height: fit-content;
+    margin: 0px 10px 0px 10px;
+    border-radius: 10px;
+}
+
+#editform-todo{
+    padding: 10px;
+    padding-top: 0px;
+    height: fit-content;
+    margin: 10px 10px 0px 10px;
+    border-radius: 10px;
+}
+
+.todoplace{
+    width: 35%;
+    border: 1px solid #CD5D67;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.donetodo{
+    width: 35%;
+    border: 1px solid #B5FFE9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search, .filter{
+    margin-top: 20px;
+}
+#todoform{
+    padding-top: 40px;
+    border-top: 1px black solid;
+}
+
+.todo{
+    width: 95%;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #CD5D67;
+    display: flex;
+    align-items: center;
+}
+.done{
+    width: 95%;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #B5FFE9;
+    display: flex;
+    align-items: center;
+}
+
+.todoedit{
+    width: 400px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #CD5D67;
+    display: flex;
+}
+
+.formcontrol{
+    display: flex;
+    align-items: center;
+}
+
+#editform-todo{
+    box-shadow: 10px 10px 30px black;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/* Main text/button/input styles */
+#to{
+    color: #B5FFE9;
+}
+#do{
+    color: #CD5D67;
+}
+
+h3, h4{
+    color: #282929;
+}
+h2{
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+#editform-todo > h2{
+    padding: 0px;
+}
+
+.todo > h3, .done > h3{
+    text-wrap: wrap;
+    overflow: auto;
+}
+.todo > h3{
+    width: 300px;
+}
+.done > h3{
+    width: 300px;
+}
+
+.finishtodo, .edittodo-todo, .removetodo-todo{
+    background-color: #CD5D67;
+}
+.removetodo-done{
+    background-color: #B5FFE9;
+}
+.removetodo-done:hover{
+    color: #B5FFE9;
+}
+
+#todoform > .formcontrol > button{
+    height: 25px;
+    background-color: white;
+    color: #282929;
+}
+#todoform > .formcontrol > button:hover{
+    background-color: #282929;
+    color: white;
+}
+.search > .formcontrol > button{
+    background-color: white;
+    color: #282929;
+}
+.search > .formcontrol > button:hover{
+    background-color: #282929;
+    color: white;
+}
+
+#editinput-todo{
+    width: 55%;
+}
+.cancel-todo{
+    width: 45%;
+    height: 26px;
+}
+#submit-todo:hover{
+    color: #B5FFE9;
+}
+
+#todoinput, #searchinput, #editinput-todo{
+    border-radius: 5px;
+    border: none;
+}
+#todoinput:focus, #searchinput:focus, #editinput-todo:focus{
+    outline: none;
+    border-radius: 5px;
+}
+
+#filterselect, #filterselect:hover, #filterselect:focus, #filterselect:focus-visible{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* hiding */
+.hide, .hidefilter{
+    display: none;
+}
