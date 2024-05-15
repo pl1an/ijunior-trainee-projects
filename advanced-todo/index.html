@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/scripts.js" defer></script>
+</head>
+
+
+<body>
+
+    <!-- main division - includes title and add/search/filter menu -->
+    <div class="maindiv">
+
+        <div class="title">
+            <h1 id="to">to</h1>
+            <h1 id="do"> do</h1>
+            <h1 id="to"> list</h1>
+        </div>
+
+        <div class="toolbar">
+            <form id="todoform">
+                <div class="formcontrol">
+                    <input type="text" placeholder="what is your goal?" id="todoinput">
+                    <button type="submit" class="newtodobutton">
+                        <i class="fa-thin fa-plus"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div class="search">
+                <form class="formcontrol">
+                    <input type="text" placeholder="search your goal" id="searchinput">
+                    <button class="erasebutton">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="filter">
+                <select id="filterselect" class="filterselect">
+                    <option value="all">all</option>
+                    <option value="completed">completed</option>
+                    <option value="todo">to reach</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- list division - includes done and undone to-dos -->
+    <div class="lists">
+
+        <!-- class = editdiv / hide-->
+        <div class="editdiv hide">
+            <form id="editform-todo">
+                <h2>edit your goal</h2>
+                <div class="formcontrol">
+                    <input type="text" id="editinput-todo" placeholder="what changed?">
+                    <button type="submit" id="submit-todo" class="submit-todo"><i class="fa-solid fa-check-double"></i></button>
+                    <button class="cancel-todo">cancel changes</button>
+                </div>
+            </form>
+            <div class="todoedit">
+                <h3>trying to reach a goal...</h3>
+            </div>
+        </div>
+
+        <!-- class = todoplace / hide-->
+        <div class="todoplace">
+            <h2 id="do">goals</h2>
+            <div class="todolist">
+                <div class="todo">
+                    <h3>trying to reach a goal...</h3>
+                    <button class="finishtodo">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="edittodo-todo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="removetodo-todo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="todo">
+                    <h3>almost there</h3>
+                    <button class="finishtodo">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="edittodo-todo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="removetodo-todo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- class = donetodo / hide -->
+        <div class="donetodo">
+            <h2 id="to">achievements</h2>
+            <div class="donelist">
+                <div class="done">
+                    <h3>showing an achievement</h3>
+                    <button class="removetodo-done">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="done">
+                    <h3>showing an achievement because it's great!</h3>
+                    <button class="removetodo-done">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
