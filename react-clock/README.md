@@ -14,7 +14,7 @@
 
 ## Future updates
 - This is a placeholder project with the objective to test new features from react when i learn them. Because of this, the project isn't going to remain a simple clock forever, since new features are going to be constantly added.
-- My main objective right now is to learn how to use *cases* since using *render* every clock tick is not optimal.
+- My main objective right now is to learn how to use *state* since using *render* every clock tick is not optimal.
 - New objects and features will be constantly added to this README.
 
 ## Page state history
