@@ -20,6 +20,7 @@
 ## Page state history
 
 ![](./screenshots/screenshot1.png)
+![](./screenshots/screenshot2.png)
 
 ## Made by
 - [pl1an](https://github.com/pl1an)
