@@ -1,1 +1,14 @@
+h1, h2, h3{
+    margin: 0px;
+    padding: 0px;
+}
 
+.clock1, .clock2, .clock3{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+}
